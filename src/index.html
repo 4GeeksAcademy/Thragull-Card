@@ -11,18 +11,76 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <script
+      src="https://kit.fontawesome.com/072e5df971.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--♦ ♥ ♠ ♣-->
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="palos position-relative">
+      <div class="frameHeart">♥</div>
+      <div class="frameSpades">♠</div>
+      <div class="frameClubs">♣</div>
+      <div class="frameDiamonds">♦</div>
+      <div class="frame border border-3 border-white">
+        <h1 id="timer" class="position-absolute p-4 fw-bold">10</h1>
+        <div
+          id="card"
+          class="position-relative border border-dark border-3 shadow-lg bg-white position-absolute top-50 start-50 translate-middle"
+        >
+          <div id="topLeft"></div>
+          <div
+            id="cardValue"
+            class="value position-absolute top-50 start-50 translate-middle"
+          ></div>
+          <div id="bottomRight"></div>
+        </div>
+      </div>
+      <div class="fixed-top mt-1 mx-auto input-group container">
+        <label
+          class="input-group-text col-2 bg-black border-secondary text-uppercase text-white fw-bold justify-content-center"
+          >Height</label
+        >
+        <input
+          type="number"
+          step="any"
+          min="0"
+          max="75"
+          id="heightForm"
+          class="form-control col-auto text-center fw-bold"
+          placeholder="Height (max 75)"
+          aria-label="Height"
+        />
+        <button
+          id="btnLink"
+          class="linked btn btn-secondary rounded-0 col-auto shadow-none"
+        >
+          <i class="fa-solid fa-link"></i>
+        </button>
+        <input
+          type="number"
+          step="any"
+          min="0"
+          max="53.625"
+          id="widthForm"
+          class="form-control col-auto text-center fw-bold"
+          placeholder="Width (max 53.625)"
+          aria-label="Width"
+        />
+        <label
+          class="input-group-text col-2 border-secondary text-uppercase text-white fw-bold justify-content-center"
+          style="background-color: red;"
+          >Width</label
+        >
+      </div>
+      <div class="row fixed-bottom">
+        <button
+          id="newCardButton"
+          class="btn btn-danger  mx-auto mb-2 col-1 shadow-none"
+        >
+          Take new card
+        </button>
       </div>
     </div>
   </body>

@@ -1,1 +1,77 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: pokerFont;
+  src: url(/assets/fonts/pokerFont.otf);
+}
+
+body {
+  background-image: url("assets/img/Tapete2.jpg");
+  background-repeat: no-repeat;
+  font-family: pokerFont;
+  width: 100vw;
+  height: 100vh;
+}
+.frameHeart {
+  color: red;
+  font-size: 2.7vw;
+  position: absolute;
+  left: 0.5vw;
+}
+.frameSpades {
+  color: black;
+  font-size: 2.7vw;
+  position: absolute;
+  right: 0.5vw;
+}
+.frameClubs {
+  color: black;
+  font-size: 2.7vw;
+  position: absolute;
+  left: 0.5vw;
+  top: 92vh;
+}
+.frameDiamonds {
+  color: red;
+  font-size: 2.7vw;
+  position: absolute;
+  right: 0.5vw;
+  top: 92vh;
+}
+.frame {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+  padding-bottom: 88vh;
+  padding-right: 93vw;
+  border-radius: 15px;
+  position: absolute;
+}
+#timer {
+  font-size: 15vh;
+  color: red;
+  text-shadow: 0 0 15px black;
+}
+#card {
+  width: 53.625vh;
+  height: 75vh;
+  border-radius: 1vw;
+}
+#topLeft {
+  color: red;
+  position: absolute;
+  left: 1vw;
+  font-size: 6vh;
+}
+#cardValue {
+  color: red;
+  font-size: 40vh;
+}
+#bottomRight {
+  color: red;
+  rotate: 180deg;
+  position: absolute;
+  right: 1vw;
+  font-size: 6vh;
+  bottom: 1vh;
+}
